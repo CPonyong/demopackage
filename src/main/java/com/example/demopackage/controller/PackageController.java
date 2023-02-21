@@ -21,8 +21,6 @@ public class PackageController {
     @Autowired
     IPackageService packageService;
 
-//    search, insert, update, delete
-
     @PostMapping(path = "/search", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseObject<List<PackageDto>> searchPackage(@RequestBody PackageRequest req){
        return new ResponseObject<>(packageService.search(req));

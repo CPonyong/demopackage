@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AuthenticationController {
 
     @PostMapping(path = "/login", produces = MediaType.APPLICATION_JSON_VALUE)
-    public static String login(@RequestBody UserCredentials req){
-        return "SSSSS";
+    public static void login(@RequestBody UserCredentials req){
+        //get jwt token from header
     }
 }
